@@ -8,7 +8,7 @@ $(document).ready(() => {
 
 function getMovies(searchText) {
     console.log(searchText);
-    axios.get('http://ufo-api.herokuapp.com/api/sightings/search?city=' + searchText)
+    axios.get('https://ufo-api.herokuapp.com/api/sightings/search?city=' + searchText)
         .then((response) => {
             console.log(response);
 
